@@ -6,15 +6,8 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/again_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="see you again" />
-
-    <Button
-        android:id="@+id/you_have_brave_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="有种点我试试"/>
+        android:text="66666666666666666" />
 
 </LinearLayout>

@@ -1,6 +1,9 @@
 package io.github.seon.nirvana;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,12 +16,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        TextView againTv = findViewById(R.id.again_tv);
+        againTv.setText("再次见到你！");
+
+
+        findViewById(R.id.you_have_brave_btn).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, MainActivityCopy.class);
+            startActivity(intent, savedInstanceState);
         });
     }
 }
