@@ -6,8 +6,9 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/color_test_textview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="66666666666666666" />
+        android:text="66666666666666666"  />
 
 </LinearLayout>
