@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".ScrollViewActivity">
 
     <HorizontalScrollView
@@ -28,5 +28,20 @@
 
         </LinearLayout>
     </HorizontalScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="you pc will boom if you click me"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/tv_time_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前时间为:"/>
+
+
 
 </LinearLayout>
