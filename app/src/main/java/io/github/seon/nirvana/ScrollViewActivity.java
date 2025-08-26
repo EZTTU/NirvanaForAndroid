@@ -14,8 +14,6 @@ import io.github.seon.nirvana.utils.TimeUtil;
 
 public class ScrollViewActivity extends AppCompatActivity {
 
-    private TextView tvTimeDisplay;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,10 +25,10 @@ public class ScrollViewActivity extends AppCompatActivity {
             return insets;
         });
 
-        tvTimeDisplay = findViewById(R.id.tv_time_display);
-    }
-
-    public void onClick(View view) {
-        tvTimeDisplay.setText("当前时间为" + TimeUtil.getNowTimeFormat());
+        findViewById(R.id.boom_button).setOnLongClickListener(view -> {
+            TextView tvTimeDisplay = findViewById(R.id.tv_time_display);
+            tvTimeDisplay.setText("Boom!!!");
+            return false;
+        });
     }
 }

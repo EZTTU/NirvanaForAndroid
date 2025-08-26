@@ -30,9 +30,9 @@
     </HorizontalScrollView>
 
     <Button
+        android:id="@+id/boom_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onClick"
         android:text="you pc will boom if you click me"
         android:textAllCaps="true" />
 
