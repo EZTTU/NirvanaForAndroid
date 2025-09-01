@@ -1,4 +1,4 @@
-package io.github.seon.nirvana;
+package io.github.seon.nirvana.demo;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import io.github.seon.nirvana.R;
 
 public class MainActivityCopy extends AppCompatActivity {
     @Override
