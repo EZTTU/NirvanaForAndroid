@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">nirvana</string>
+    <string name="enter_expression">Please enter expression</string>
+    <string name="easy_calculator">Easy Calculator</string>
 </resources>
